@@ -1,21 +1,19 @@
-import './App.css';
+import './css/style.css';
+import {Logo, Menu} from './components/Header.js'
+import Footer from './components/Footer.js'
+import Panels from './components/Panels.js'
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <figure>
+        <Logo/>
+        <Menu/>
+        <Panels/>
+        <Footer />
+      </figure>
     </div>
   );
 }
